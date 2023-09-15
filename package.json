@@ -1,0 +1,47 @@
+{
+  "name": "rumor-core",
+  "version": "0.0.5",
+  "type": "module",
+  "description": "WebRTC service using motion detection.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahnytae/rumor-core.git"
+  },
+  "author": "ahny <h.t.ahn93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahnytae/rumor-core/issues",
+    "email": "h.t.ahn93@gmail.com"
+  },
+  "homepage": "https://github.com/ahnytae/rumor-core#readme",
+  "keywords": [
+    "WebRTC",
+    "motionDetection",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/uuid": "^9.0.4",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@mediapipe/pose": "^0.5.1675469404",
+    "@tensorflow-models/pose-detection": "^2.1.3",
+    "@tensorflow/tfjs-backend-webgl": "^4.11.0",
+    "@tensorflow/tfjs-converter": "^4.11.0",
+    "@tensorflow/tfjs-core": "^4.11.0",
+    "socket.io-client": "^4.7.2",
+    "uuid": "^9.0.1"
+  }
+}
