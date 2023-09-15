@@ -1,6 +1,6 @@
 {
   "name": "rumor-core",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "description": "WebRTC service using motion detection.",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/mjs/index.js"
+      "import": "./dist/index.js"
     }
   },
   "scripts": {
@@ -28,8 +28,7 @@
   "homepage": "https://github.com/ahnytae/rumor-core#readme",
   "keywords": [
     "WebRTC",
-    "motionDetection",
-    "typescript"
+    "motionDetection"
   ],
   "devDependencies": {
     "@types/uuid": "^9.0.4",
