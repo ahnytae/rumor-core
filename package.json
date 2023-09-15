@@ -1,6 +1,6 @@
 {
   "name": "rumor-core",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "description": "WebRTC service using motion detection.",
   "main": "dist/index.js",
@@ -38,6 +38,7 @@
     "@mediapipe/pose": "^0.5.1675469404",
     "@tensorflow-models/pose-detection": "^2.1.3",
     "@tensorflow/tfjs-backend-webgl": "^4.11.0",
+    "@tensorflow/tfjs-backend-webgpu": "^4.11.0",
     "@tensorflow/tfjs-converter": "^4.11.0",
     "@tensorflow/tfjs-core": "^4.11.0",
     "socket.io-client": "^4.7.2",
