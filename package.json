@@ -1,19 +1,14 @@
 {
   "name": "rumor-core",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "description": "WebRTC service using motion detection.",
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js"
-    }
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -fr dist/* && tsc -p tsconfig.json"
+    "build": "tsc --emitDeclarationOnly & rollup -c"
   },
   "repository": {
     "type": "git",
@@ -30,8 +25,22 @@
     "WebRTC",
     "motionDetection"
   ],
+  "files": [
+    "lib",
+    "dist"
+  ],
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-url": "^8.0.1",
+    "@svgr/rollup": "^8.1.0",
     "@types/uuid": "^9.0.4",
+    "rollup": "^3.29.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.35.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
