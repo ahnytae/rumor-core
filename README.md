@@ -39,7 +39,7 @@ yarn add rumor-core
 
 ## 추가 될 기능
 
-- 프로젝트 API Key 발급
+- Frontend 구축
 - 방 입장/정보 api 개선 및 nest.js로 마이그레이션
 - logger 클래스 추가
 - Motion 속도 최적화

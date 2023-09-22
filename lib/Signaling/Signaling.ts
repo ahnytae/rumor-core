@@ -63,10 +63,10 @@ export default class Signaling {
 
   static createInstance() {
     if (!Signaling.instance) {
-      Signaling.instance = new Signaling("https://www.sesac500.site/api");
+      Signaling.instance = new Signaling("https://www.sesac500.site");
       return;
     }
-    console.error("%c   already created Instance", "color: red");
+    console.error("%c   already Instance", "color: red");
   }
 
   static get getInstance() {
