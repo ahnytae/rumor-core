@@ -4,9 +4,16 @@ Real-time Motion Detection API는 WebRTC와 Pose Detection을 기반으로 한 �
 
 ## 기능
 
-- 1:1 방 생성 / 방 입장 후 영상통화
-- 본인, 원격 장치 on/off 기능
-- 실시간 모션 감지 및 랜더링 (본인, 원격 실시간 동기화)
+- requestAnimationFrame을 이용해 프레임마다 실시간 모션감지
+- socket을 사용해 모션 데이터들을 전송
+- 사설 TURN 서버 이용해 wifi/모바일 데이터 가능한 1:1 화상 연결
+
+## Preview
+### Motion 감지 영상
+![Motion 동작 영상](https://github.com/ahnytae/rumor-core/assets/62460298/3ac074ba-ad72-4cda-a105-3a589c5bc94e)
+
+### 방 생성 - 모션 동작까지 전체 데모 영상
+[![동영상](https://github.com/ahnytae/rumor-core/blob/main/assets/62460298/52bf54ec-02b5-477c-a0a6-9c3c51145bfd.mp4)](https://github.com/ahnytae/rumor-core/blob/main/assets/62460298/52bf54ec-02b5-477c-a0a6-9c3c51145bfd.mp4)
 
 ## API Docs
 
@@ -18,17 +25,15 @@ Real-time Motion Detection API는 WebRTC와 Pose Detection을 기반으로 한 �
 yarn add rumor-core
 ```
 
-## 클라우드 (NCP)
+## 배포
 
       +-------------+
       |     User    |
       +-------------+
               |
-              |
               v
      +--------+----------+
      |     EC2 서버       |
-     |    (웹 애플리케이션)  |
      |   +------------+  |
      |   |   Nginx    |  |
      |   |   +------+ |  |
